@@ -4,18 +4,16 @@ public class MakeStars{
 
   public static void main(String[] args){
 
-    boolean linePrinting = true;
     Scanner lines = new Scanner(System.in);
 
-    while (linePrinting){
+    while (lines.hasNextLine()){
 
       String currentLine = lines.nextLine();
       Scanner words = new Scanner(currentLine);
-      boolean wordPrinting = true;
 
       System.out.println();
 
-      while (wordPrinting){
+      while (words.hasNext()){
 
         String currentWord = words.next();
         String stars = "";
